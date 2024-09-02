@@ -1,18 +1,18 @@
 export const routes = [
 	{
-		title: "About Us",
+		title: "Giới thiệu",
 		href: "about-us",
 	},
 	{
-		title: "Moments",
+		title: "Khoảnh khắc",
 		href: "moments",
 	},
 	{
-		title: "Blog",
+		title: "Bài viết",
 		href: "blog-grid",
 	},
 	{
-		title: "Contact Us",
+		title: "Liên hệ",
 		href: "contact-us",
 	},
 ];

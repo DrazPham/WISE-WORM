@@ -4,12 +4,12 @@ import MapImg from "assets/images/icon/map.svg";
 import Star2Img from "assets/images/v1/star2.png";
 function ContactInfo() {
 	return (
-		<div className="aximo-contact-info-section">
+		<div className="section aximo-section-padding aximo-contact-info-section">
 			<div className="container">
 				<div className="aximo-contact-info-title">
 					<h2>
 						<span className="aximo-title-animation">
-							Contact Information
+							Thông tin liên hệ
 							<span className="aximo-title-icon">
 								<img src={Star2Img} alt="Star" />
 							</span>
@@ -24,9 +24,9 @@ function ContactInfo() {
 									<img src={Call2Img} alt="Call Img" />
 								</div>
 								<div className="aximo-contact-info-data">
-									<span>Call us</span>
-									<p>+088-234-6532-789</p>
-									<p>+088-456-3217-005</p>
+									<span>Điện thoại</span>
+									<p>09123456789</p>
+									<p>09123456789</p>
 								</div>
 							</div>
 						</a>
@@ -38,9 +38,8 @@ function ContactInfo() {
 									<img src={EmailImg} alt="Email" />
 								</div>
 								<div className="aximo-contact-info-data">
-									<span>Call us</span>
-									<p>example@gmail.com</p>
-									<p>example@gmail.com</p>
+									<span>Email</span>
+									<p>hello@wiseworm.org</p>
 								</div>
 							</div>
 						</a>
@@ -51,8 +50,8 @@ function ContactInfo() {
 								<img src={MapImg} alt="Map" />
 							</div>
 							<div className="aximo-contact-info-data">
-								<span>Office address</span>
-								<p>4132 Thornridge City, New York.</p>
+								<span>Facebook</span>
+								<p>Wise Worm</p>
 							</div>
 						</div>
 					</div>

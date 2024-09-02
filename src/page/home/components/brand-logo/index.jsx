@@ -21,78 +21,6 @@ const sliderData = [
 		id: crypto.randomUUID(),
 		img: Brand3Img,
 	},
-	{
-		id: crypto.randomUUID(),
-		img: Brand4Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		img: Brand5Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		img: Brand6Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		img: Brand7Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		img: Brand1Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		img: Brand2Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		img: Brand3Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		img: Brand4Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		img: Brand5Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		img: Brand6Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		img: Brand7Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		img: Brand1Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		img: Brand2Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		img: Brand3Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		img: Brand4Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		img: Brand5Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		img: Brand6Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		img: Brand7Img,
-	},
 ];
 
 const swiperSettings = {
@@ -124,7 +52,7 @@ function BrandLogo() {
 	return (
 		<div className="aximo-brandlogo-section2 extra-side-margin">
 			<div className="aximo-brandlogo-title">
-				<p>We help hundreds of companies to grow</p>
+				<p>Xuất hiện trên</p>
 			</div>
 			<div className="swiper aximo-auto-slider">
 				{

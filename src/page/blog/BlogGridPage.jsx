@@ -38,7 +38,9 @@ function BlogGridPage() {
 				}  
 			  };  
 			});  
-			setGridBlogData(blogs);  
+			const sortedBlogs = blogs.sort((a, b) => b.id.localeCompare(a.id));
+
+      		setGridBlogData(sortedBlogs);
 		  } catch (error) {  
 			console.error('Error fetching blog posts:', error);  
 		  }  
@@ -48,7 +50,7 @@ function BlogGridPage() {
 
 	return (
 		<BlogGridContext.Provider value={gridBlogData}>
-			<BreadCrumb title="Blog Grid" />
+			<BreadCrumb title="Bài viết" />
 			<GridBlog />
 		</BlogGridContext.Provider>
 	);

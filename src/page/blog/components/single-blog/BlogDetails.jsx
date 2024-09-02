@@ -21,7 +21,7 @@ function BlogDetails() {
 				/>
 			</div>
 			<div className="single-post-content-wrap">
-				<PostMeta category={blogContent.meta.category} date={blogContent.meta.date} />
+				<PostMeta category={blogContent.meta.author} date={blogContent.meta.date} />
 				<div className="entry-content">
 				<h3>{blogContent.title}</h3>
 					<ReactMarkdown breaks>{blogContent.content}</ReactMarkdown>

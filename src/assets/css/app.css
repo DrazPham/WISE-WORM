@@ -414,20 +414,20 @@ h1,
 
 h2,
 .h2 {
-	font-size: 70px;
+	font-size: 48px;
 	line-height: 1.07em; /* 116.667% */
 	letter-spacing: -0.7px;
 }
 @media (max-width: 1199px) {
 	h2,
 	.h2 {
-		font-size: 48px;
+		font-size: 36px;
 	}
 }
 @media (max-width: 767px) {
 	h2,
 	.h2 {
-		font-size: 36px;
+		font-size: 28px;
 		font-weight: 600;
 		letter-spacing: -0.64px;
 	}
@@ -4120,19 +4120,19 @@ button#aximo-hero-subscription-btn:hover .aximo-label-up {
 	color: var(--orange-color2);
 }
 .aximo-hero-content4 h1 {
-	font-size: 120px;
+	font-size: 72px;
 	margin-bottom: 24px;
 	color: var(--light-color3);
 	font-family: "Arimo", sans-serif;
 }
 @media (max-width: 1669px) {
 	.aximo-hero-content4 h1 {
-		font-size: 110px;
+		font-size: 64px;
 	}
 }
 @media (max-width: 1400px) {
 	.aximo-hero-content4 h1 {
-		font-size: 80px;
+		font-size: 54px;
 	}
 }
 @media (max-width: 1199px) {
@@ -4142,16 +4142,16 @@ button#aximo-hero-subscription-btn:hover .aximo-label-up {
 }
 @media (max-width: 991px) {
 	.aximo-hero-content4 h1 {
-		font-size: 70px;
+		font-size: 44px;
 	}
 }
 @media (max-width: 767px) {
 	.aximo-hero-content4 h1 {
-		font-size: 48px;
+		font-size: 36px;
 	}
 }
 .aximo-hero-content4 p {
-	font-size: 21px;
+	font-size: 19px;
 	color: var(--light-color3);
 }
 .aximo-hero-content4 .aximo-hero-btn-wrap {
@@ -8393,24 +8393,24 @@ a.aximo-connect-login img {
 	color: var(--white-smoke);
 }
 .aximo-section-title.clash-grotesk h2 {
-	font-size: 80px;
+	font-size: 60px;
 	font-weight: 600;
 	color: var(--heading-color2);
 	font-family: "ClashGroteskSemibold";
 }
 @media (max-width: 1199px) {
 	.aximo-section-title.clash-grotesk h2 {
-		font-size: 60px;
+		font-size: 48px;
 	}
 }
 @media (max-width: 767px) {
 	.aximo-section-title.clash-grotesk h2 {
-		font-size: 40px;
+		font-size: 36px;
 	}
 }
 @media (max-width: 575px) {
 	.aximo-section-title.clash-grotesk h2 {
-		font-size: 36px;
+		font-size: 24px;
 	}
 }
 .aximo-section-title.familjen-grotesk h2 {
@@ -8439,25 +8439,24 @@ a.aximo-connect-login img {
 	color: var(--light-color2);
 }
 .aximo-section-title.arimo-font h2 {
-	font-size: 75px;
-	letter-spacing: -1px;
-	line-height: 1em;
+	font-size: 32px;
+	line-height: 1.2em;
 	color: var(--heading-color3);
 	font-family: "Arimo", sans-serif;
 }
 @media (max-width: 1400px) {
 	.aximo-section-title.arimo-font h2 {
-		font-size: 60px;
+		font-size: 28px;
 	}
 }
 @media (max-width: 1199px) {
 	.aximo-section-title.arimo-font h2 {
-		font-size: 48px;
+		font-size: 24px;
 	}
 }
 @media (max-width: 575px) {
 	.aximo-section-title.arimo-font h2 {
-		font-size: 36px;
+		font-size: 20px;
 	}
 }
 .aximo-section-title.arimo-font.light h2 {

@@ -57,7 +57,7 @@ function SingleBlogPage() {
 
 	return (
 		<BlogContext.Provider value={blog}>
-			<BreadCrumb title="Blog Details"/>
+			<BreadCrumb title="Bài viết"/>
 			<SingleBlog/>
 		</BlogContext.Provider>
 	);

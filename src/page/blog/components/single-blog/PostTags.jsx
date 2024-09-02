@@ -5,7 +5,7 @@ function PostTags({ tags }) {
 				<h3>Tags:</h3>
 				<div className="wp-block-tag-cloud">
 					{tags.map((tag, index) => (
-						<a href="#" key={index}>
+						<a key={index}>
 							{tag}
 						</a>
 					))}
