@@ -8,7 +8,7 @@ import { db } from 'fbase/Firebase';
 
 const BlogContext = createContext({});
 
-const timestampToDate = (timestamp) => {  
+function timestampToDate(timestamp) {  
 	if (timestamp && timestamp.seconds !== undefined) {  
 		const date = new Date(timestamp.seconds * 1000);  
 		return date.toLocaleDateString('en-US', {  
@@ -19,6 +19,10 @@ const timestampToDate = (timestamp) => {
 	}  
 	return null;  
 };  
+
+function newLineFix(text) {
+	return text.replace(/\\n/g, '\n')
+}
 
 function SingleBlogPage() {
 	const { id } = useParams();
@@ -35,7 +39,9 @@ function SingleBlogPage() {
 			if (blogData.meta.date) {  
 				blogData.meta.date = timestampToDate(blogData.meta.date);  
 			}
-			blogData.content = blogData.content?.replace(/\n/gi, "  \n") ?? "";
+			if (blogData.content) {  
+				blogData.content = newLineFix(blogData.content); 
+			}
 			setBlog(blogData);  
 		} else {  
 			console.log('No such document!');  
@@ -44,8 +50,6 @@ function SingleBlogPage() {
 
 		fetchBlog();  
 	}, [id]);  
-
-	console.log(blog)
 
 	if (!blog) {  
 		return <div>Loading...</div>;  
