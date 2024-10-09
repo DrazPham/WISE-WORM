@@ -4,7 +4,6 @@ import { useContext } from "react";
 
 function GridBlog() {
 	const BlogGridData = useContext(BlogGridContext);
-	console.log(BlogGridData)
 	return (
 		<div className="section aximo-section-padding2">
 			<div className="container">

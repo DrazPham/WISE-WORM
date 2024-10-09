@@ -4,7 +4,7 @@ export const routes = [
 		href: "about-us",
 	},
 	{
-		title: "Khoảnh khắc",
+		title: "Câu chuyện từ dự án",
 		href: "moments",
 	},
 	{

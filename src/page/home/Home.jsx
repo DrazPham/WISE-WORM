@@ -11,17 +11,17 @@ import WhyChooseUs from "./components/why-choose-us";
 
 function HomeFour() {
 	return (
-		<div className="aximo-all-section bg-light4">
+		<div className="aximo-all-section bg-light4" style={{display:"flex",gap:"30px",flexDirection:"column"}}>
 			<Hero />
-			<MissionVision />
-			<BrandLogo />
-			<Services />
 			<WhyChooseUs />
-			<NumberBox />
-			<Projects />
+			<BrandLogo />
 			<Testimonials />
-			<Blogs />
-			<Instagrams />
+			<NumberBox />
+			{/* <MissionVision /> */}
+			{/* <Services /> */}
+			{/* <Projects /> */}
+			{/* <Instagrams /> */}
+			{/* <Blogs /> */}
 		</div>
 	);
 }

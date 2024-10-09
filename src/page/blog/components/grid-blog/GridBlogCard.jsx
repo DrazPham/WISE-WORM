@@ -11,7 +11,8 @@ function GridBlogCard({ blog: { id, imagePreview, title, meta } }) {
 				<div className="post-content">
 					<div className="post-meta">
 						<div className="post-category">
-							<a>{meta.author}</a>
+							{/* <a>{meta.author}</a> */}
+							<p>{meta.tags}</p>
 						</div>
 						<div className="post-date">{meta.date}</div>
 					</div>

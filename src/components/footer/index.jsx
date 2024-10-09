@@ -1,5 +1,5 @@
 import FooterCopyright from "./FooterCopyright";
-import LogoWhiteImg from "assets/images/logo/logo-white.svg";
+import logo from "assets/images/logo/logo.png";
 import { Link } from "react-router-dom";
 function Footer() {
 	return (
@@ -9,26 +9,30 @@ function Footer() {
 					<div className="row">
 						<div className="col-xl-4 col-lg-12">
 							<div className="aximo-footer-textarea light-one">
-								<a href="">
-									<img src={LogoWhiteImg} alt="Logo" />
+								<a href="#">
+									{/* <img src={logo} style={{maxHeight:"100px"}}alt="Logo" /> */}
+									<h2 style={{
+										background: "linear-gradient(to right, #4f469c,#2c61d1)",
+										backgroundClip: "text",
+										color: "transparent",
+									}}>WISEWORM</h2>
 								</a>
 								<p>
-									We are a branding agency that digitally works to help companies grow. We have a
-									successful track record of working with various organizations.
+								Dự án dạy Tiếng Anh trực tuyến phi lợi nhuận, mang cơ hội tiếp cận Tiếng Anh đến trẻ em ở những vùng sâu, vùng xa, vùng gặp nhiều khó khăn
 								</p>
 								<div className="aximo-social-icon aximo-social-icon3">
 									<ul>
-										<li>
+										{/* <li>
 											<a href="https://twitter.com/" target="_blank">
 												<i className="icon-twitter"></i>
 											</a>
-										</li>
+										</li> */}
 										<li>
-											<a href="https://facebook.com/" target="_blank">
+											<a href="https://www.facebook.com/wiseworm" target="_blank">
 												<i className="icon-facebook"></i>
 											</a>
 										</li>
-										<li>
+										{/* <li>
 											<a href="https://www.instagram.com/" target="_blank">
 												<i className="icon-instagram"></i>
 											</a>
@@ -37,36 +41,33 @@ function Footer() {
 											<a href="https://www.linkedin.com/" target="_blank">
 												<i className="icon-linkedin"></i>
 											</a>
-										</li>
+										</li> */}
 									</ul>
 								</div>
 							</div>
 						</div>
-						<div className="col-xl-3 col-md-4">
+						<div className="col-xl-4 col-md-4">
 							<div className="aximo-footer-menu extar-margin light-one">
 								<div className="aximo-footer-title light-one">
-									<p>Special Links</p>
+									<p>Trang</p>
 								</div>
 								<ul>
 									<li>
-										<Link to="/about">About us</Link>
+										<Link to="/about">Giới thiệu</Link>
 									</li>
 									<li>
-										<Link to="/service">Our services</Link>
+										<Link to="/service">Câu chuyện từ dự án</Link>
 									</li>
 									<li>
-										<Link to="/portfolio-one">Portfolio</Link>
+										<Link to="/portfolio-one">Bài viết</Link>
 									</li>
 									<li>
-										<Link to="/blog">Blogs</Link>
-									</li>
-									<li>
-										<Link to="/">Premium member</Link>
+										<Link to="/blog">Liên hệ</Link>
 									</li>
 								</ul>
 							</div>
 						</div>
-						<div className="col-xl-2 col-md-4">
+						{/* <div className="col-xl-2 col-md-4">
 							<div className="aximo-footer-menu light-one">
 								<div className="aximo-footer-title light-one">
 									<p>Utility pages</p>
@@ -89,32 +90,38 @@ function Footer() {
 									</li>
 								</ul>
 							</div>
-						</div>
-						<div className="col-xl-3 col-md-4">
+						</div> */}
+						<div className="col-xl-4 col-md-4">
 							<div className="aximo-footer-menu light-one m-0">
 								<div className="aximo-footer-title light-one">
-									<p>Contact us</p>
+									<p>Liên hệ</p>
 								</div>
 								<div className="aximo-contact-info2">
 									<ul>
 										<li>
-											<a href="tel: +088-234-6849">
+											<a href="tel: +09135742169">
 												<i className="icon-phone"></i>
-												+088-234-6849
+												0913574216
+											</a>
+										</li>
+										<li>
+											<a href="tel: +0976250807">
+												<i className="icon-phone"></i>
+												0976250807
 											</a>
 										</li>
 										<li>
 											<a href="mailto:example@gmail.com">
 												<i className="icon-message"></i>
-												example@gmail.com
+												hello@wiseworm.org
 											</a>
 										</li>
-										<li>
+										{/* <li>
 											<a href="">
 												<i className="icon-map"></i>
-												Haward Street,10203 USA
+												Viet Nam
 											</a>
-										</li>
+										</li> */}
 									</ul>
 								</div>
 							</div>

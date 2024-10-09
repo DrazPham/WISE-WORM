@@ -5,58 +5,62 @@ import QuoteImg from "assets/images/v4/quote.png";
 function TestimonialsCard() {
 	return (
 		<>
-			<div className="row">
-				<div className="col-lg-4">
+			<div className="row" style={{marginTop:"20px"}}>
+				<div className="col-lg-6">
 					<div className="aximo-counter-wrap4">
 						<div className="aximo-counter-data4">
 							<h2>
 								<span className="aximo-counter">
-									<CountUp end={80} duration={3} redraw={true} enableScrollSpy />
+									<CountUp end={10} duration={3} redraw={true} enableScrollSpy />
 								</span>
-								k+
+								+
 							</h2>
-							<p>Years of experience</p>
+							<p>Tỉnh,thành phố</p>
 						</div>
 					</div>
 				</div>
-				<div className="col-lg-8">
-					<div className="aximo-testimonial-wrap aximo-testimonial-wrap3">
-						<div className="aximo-testimonial-quote">
-							<img src={QuoteImg} alt="QuoteImg" />
+				<div className="col-lg-6 order-lg-2">
+					<div className="aximo-counter-wrap4">
+						<div className="aximo-counter-data4">
+							<h2>
+								<span className="aximo-counter">
+									<CountUp end={100} duration={3} redraw={true} enableScrollSpy />
+								</span>
+								+
+							</h2>
+							<p>Học viên</p>
 						</div>
-						<div className="aximo-testimonial-data">
-							<p>
-								Excellent customer service and I was really impressed and happy with my purchase
-								especially as it was a last minute order which got to me in time, and when it arrived I
-								was very happy with the design and size and so was the recipient.
-							</p>
+					</div>
+				</div>
+				<div className="col-lg-6 order-lg-2">
+					<div className="aximo-counter-wrap4">
+						<div className="aximo-counter-data4">
+							<h2>
+								<span className="aximo-counter">
+									<CountUp end={500} duration={3} redraw={true} enableScrollSpy />
+								</span>
+								+
+							</h2>
+							<p>Giờ dạy học</p>
 						</div>
-						<div className="aximo-testimonial-author">
-							<div className="aximo-testimonial-author-thumb">
-								<img src={Thumb1Img} alt="Thumb1Img" />
-							</div>
-							<div className="aximo-testimonial-author-data">
-								<span>William Jack </span>
-								<p>CEO & Founder @XYZ</p>
-							</div>
+					</div>
+				</div>
+				<div className="col-lg-6 order-lg-2">
+					<div className="aximo-counter-wrap4">
+						<div className="aximo-counter-data4">
+							<h2>
+								<span className="aximo-counter">
+									<CountUp end={24} duration={3} redraw={true} enableScrollSpy />
+								</span>
+								+
+							</h2>
+							<p>Giảng viên, trợ giảng</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className="row">
-				<div className="col-lg-4 order-lg-2">
-					<div className="aximo-counter-wrap4">
-						<div className="aximo-counter-data4">
-							<h2>
-								<span className="aximo-counter">
-									<CountUp end={200} duration={3} redraw={true} enableScrollSpy />
-								</span>
-								+
-							</h2>
-							<p>Successfully finished projects</p>
-						</div>
-					</div>
-				</div>
+
+				{/* <div className="row">
 				<div className="col-lg-8">
 					<div className="aximo-testimonial-wrap aximo-testimonial-wrap3">
 						<div className="aximo-testimonial-quote">
@@ -80,7 +84,7 @@ function TestimonialsCard() {
 						</div>
 					</div>
 				</div>
-			</div>
+				</div> */}
 		</>
 	);
 }

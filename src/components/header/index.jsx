@@ -38,7 +38,7 @@ function Header() {
 							menuTitle={menuTitle}
 						/>
 					</div>
-					<HeaderButton />
+					{/* <HeaderButton /> */}
 					<div className="mobile-menu-trigger light" onClick={() => setToggleMenu(true)}>
 						<span></span>
 					</div>

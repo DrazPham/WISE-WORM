@@ -4,43 +4,99 @@ import About from "components/common/about";
 import AutoSlider from "components/common/auto-slider";
 import Teams from "components/common/teams";
 // Teams images
-import Team1Img from "assets/images/team/team1.png";
-import Team2Img from "assets/images/team/team2.png";
-import Team3Img from "assets/images/team/team3.png";
-import Team4Img from "assets/images/team/team4.png";
+import HaPhuong from "assets/images/core/HaPhuong.jpg";
+import ThanhHang from "assets/images/core/ThanhHang.jpg";
+import TramAnh from "assets/images/core/TramAnh.jpg";
+import ThanhHuyen from "assets/images/core/ThanhHuyen.jpg";
+import ThienKim from "assets/images/core/ThienKim.jpeg";
+import MinhChien from "assets/images/core/MinhChien.jpeg";
+import AnhTu from "assets/images/core/AnhTu.jpeg";
+import PhuongLinh from "assets/images/core/PhuongLinh.jpg";
+import MinhUyen from "assets/images/core/MinhUyen.jpg";
+import HaiAnh from "assets/images/core/HaiAnh.jpg";
+import HanhDung from "assets/images/core/HanhDung.jpg";
+import GiaBao from "assets/images/core/GiaBao.jpg";
 
 const teamsData = [
 	{
 		id: crypto.randomUUID(),
-		name: "Andrew Mark",
-		designation: "Creative Director",
-		img: Team1Img,
+		name: "Công Thu Hà Phương",
+		designation: "Ban điều hành",
+		img: HaPhuong,
 	},
 	{
 		id: crypto.randomUUID(),
-		name: "Jack Taylor",
-		designation: "Senior Designer",
-		img: Team2Img,
+		name: "Đặng Thanh Hằng",
+		designation: "Ban điều hành",
+		img: ThanhHang,
 	},
 	{
 		id: crypto.randomUUID(),
-		name: "Martine Joy",
-		designation: "Project Manager",
-		img: Team3Img,
+		name: "Nguyễn Trâm Anh",
+		designation: "Trưởng ban Chuyên môn",
+		img: TramAnh,
 	},
 	{
 		id: crypto.randomUUID(),
-		name: "Adam Straw",
-		designation: "Web Developer",
-		img: Team4Img,
+		name: "Nguyễn Thị Thanh Huyền",
+		designation: "Trưởng ban Chuyên môn",
+		img: ThanhHuyen,
+	},
+	{
+		id: crypto.randomUUID(),
+		name: "Phan Thiên Kim",
+		designation: "Trưởng ban Design",
+		img: ThienKim,
+	},
+	{
+		id: crypto.randomUUID(),
+		name: "Nguyễn Minh Chiến",
+		designation: "Trưởng ban Nhân sự",
+		img: MinhChien,
+	},
+	{
+		id: crypto.randomUUID(),
+		name: "Phạm Anh Tú",
+		designation: "Trưởng ban Nhân sự",
+		img: AnhTu,
+	},
+	{
+		id: crypto.randomUUID(),
+		name: "Cao Phương Linh",
+		designation: "Trưởng ban Tài Chính​",
+		img: PhuongLinh,
+	},
+	{
+		id: crypto.randomUUID(),
+		name: "Hoàng Nguyễn Minh Uyên",
+		designation: "Trưởng ban Tài Chính",
+		img: MinhUyen,
+	},
+	{
+		id: crypto.randomUUID(),
+		name: "Nguyễn Hải Anh",
+		designation: "Trưởng ban Truyền thông",
+		img: HaiAnh,
+	},
+	{
+		id: crypto.randomUUID(),
+		name: "Nguyễn Hạnh Dung",
+		designation: "Trưởng ban Truyền thông",
+		img: HanhDung,
+	},
+	{
+		id: crypto.randomUUID(),
+		name: "Phạm Bùi Gia Bảo",
+		designation: "Trưởng ban Phát triển Website",
+		img: GiaBao,
 	},
 ];
 
 function AboutUs() {
 	return (
 		<>
-			<BreadCrumb title="About Us" />
-			<About />
+			{/* <BreadCrumb title="About Us" /> */}
+			{/* <About /> */}
 			<Story />
 			<AutoSlider />
 			<Teams teams={teamsData} />

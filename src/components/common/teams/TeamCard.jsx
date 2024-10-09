@@ -3,10 +3,10 @@ function TeamCard({ team: { name, designation, img } }) {
 	return (
 		<div className="col-xl-3 col-md-6">
 			<div className="aximo-team-wrap">
-				<div className="aximo-team-thumb">
-					<img src={img} alt={name} />
+				<div className="aximo-team-thumb" style={{aspectRatio:"1/1"}}>
+					<img src={img} style ={{width:"100%",height:"100%",objectFit:"cover"}}alt={name} />
 					<div className="aximo-social-icon team-social">
-						<ul>
+						{/* <ul>
 							<li>
 								<a href="">
 									<i className="icon-twitter"></i>
@@ -27,7 +27,7 @@ function TeamCard({ team: { name, designation, img } }) {
 									<i className="icon-linkedin"></i>
 								</a>
 							</li>
-						</ul>
+						</ul> */}
 					</div>
 				</div>
 				<div className="aximo-team-data">
