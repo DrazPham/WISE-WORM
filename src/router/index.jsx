@@ -12,6 +12,8 @@ import MomentsDetail from "page/moments-detail/SingleMoment"
 import SingleTeam from "page/team-detail/SingleTeam.jsx";
 import Faq from "page/utility/Faq.jsx";
 import TestimonialPage from "page/utility/Testimonial.jsx";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 export const router = createBrowserRouter([
 	{

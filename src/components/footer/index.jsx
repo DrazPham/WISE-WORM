@@ -53,16 +53,16 @@ function Footer() {
 								</div>
 								<ul>
 									<li>
-										<Link to="/about">Giới thiệu</Link>
+										<Link to="/about-us">Giới thiệu</Link>
 									</li>
 									<li>
-										<Link to="/service">Câu chuyện từ dự án</Link>
+										<Link to="/moments">Câu chuyện từ dự án</Link>
 									</li>
 									<li>
-										<Link to="/portfolio-one">Bài viết</Link>
+										<Link to="/blog-grid">Bài viết</Link>
 									</li>
 									<li>
-										<Link to="/blog">Liên hệ</Link>
+										<Link to="/contact-us">Liên hệ</Link>
 									</li>
 								</ul>
 							</div>

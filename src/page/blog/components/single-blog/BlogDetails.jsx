@@ -1,7 +1,7 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import PostMeta from "./PostMeta";
 import React, { useEffect, useState } from 'react';
-import { collection, getDocs } from 'firebase/firestore';
+import { collection, getDocs, query,orderBy } from 'firebase/firestore';
 import PostTags from "./PostTags";
 import { db } from 'fbase/Firebase';  
 import ReactMarkdown from 'react-markdown';
@@ -11,13 +11,14 @@ function BlogDetails() {
 	const [blogContent, setBlogContent] = useState([]);
 
 	useEffect(() => {
-		const fetchBlogContent = async () => {
-			const querySnapshot = await getDocs(collection(db, 'blog'));
+		const fetchStoryContent = async () => {
+			const q = query(collection(db, 'blog'), orderBy('date', 'desc'));
+			const querySnapshot = await getDocs(q);
 			const contentArray = querySnapshot.docs.map(doc => doc.data());
-			setBlogContent(contentArray);
+			setBlogContent(contentArray);		
 		};
 
-		fetchBlogContent();
+		fetchStoryContent();
 	}, []);
 
 	if (blogContent.length === 0) {

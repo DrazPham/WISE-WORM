@@ -32,7 +32,7 @@ function SingleBlogPage() {
 
     useEffect(() => {
         const fetchBlog = async () => {
-            const docRef = doc(db, 'blog', id);
+            const docRef = doc(db, 'stories', id);
             const docSnap = await getDoc(docRef);
 
             if (docSnap.exists()) {
@@ -67,7 +67,7 @@ function SingleBlogPage() {
             <img src={blog.image} alt={blog.title} style={{aspectRatio:"16/9", borderRadius:"50px"}} />
             <div style={{marginTop:"10px"}}>
                 {blog.content.map((e, index) => (
-                    <div key={index} style={{margin:"30px 0"}}>
+                    <div key={index} style={{margin:"10px 0"}}>
                         {<h3>{e.headline}</h3>}
                         {e.text && (
                             <ReactMarkdown>{e.text}</ReactMarkdown>

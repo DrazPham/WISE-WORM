@@ -2,7 +2,7 @@ import GridBlog from "./components/grid-blog";
 import BreadCrumb from "components/common/Breadcrumb";
 import { createContext } from "react";
 import { useState, useEffect } from "react";
-import { collection, getDocs } from 'firebase/firestore';
+import { collection, getDocs, query,orderBy } from 'firebase/firestore';
 import { db } from 'fbase/Firebase';
 
 const BlogGridContext = createContext([]);

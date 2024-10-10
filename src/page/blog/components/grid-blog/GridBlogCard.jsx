@@ -9,20 +9,14 @@ function GridBlogCard({ blog: { id, imagePreview, title, meta } }) {
 					<img src={imagePreview} alt={title} />
 				</div>
 				<div className="post-content">
-					<div className="post-meta">
-						<div className="post-category">
-							{/* <a>{meta.author}</a> */}
-							<p>{meta.tags}</p>
-						</div>
-						<div className="post-date">{meta.date}</div>
-					</div>
 					<Link to={`/blog/${id}`}>
-						<h3 className="entry-title">{title}</h3>
+					<h3 className="entry-title">{title}</h3>
 					</Link>
+					<div className="post-date">{meta.date}</div>
+					</div>
 					<Link className="post-read-more" to={`/blog/${id}`}>
 						Read more <img src={ArrayRightImg} alt="Arrow" />
 					</Link>
-				</div>
 			</div>
 		</div>
 	);
