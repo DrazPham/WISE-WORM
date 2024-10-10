@@ -32,7 +32,7 @@ function SingleBlogPage() {
 
     useEffect(() => {
         const fetchBlog = async () => {
-            const docRef = doc(db, 'stories', id);
+            const docRef = doc(db, 'blog', id);
             const docSnap = await getDoc(docRef);
 
             if (docSnap.exists()) {
@@ -58,21 +58,20 @@ function SingleBlogPage() {
     if (!blog) {
         return <div>Loading...</div>;
     }
-    console.log(blog.tags);
 
 
     return (
         <div style={{marginTop:"90px"}} className="container">
             <h2 style={{margin:"0 20px"}}>{blog.title}</h2>
-            <img src={blog.image} alt={blog.title} style={{aspectRatio:"16/9", borderRadius:"50px"}} />
-            <div style={{marginTop:"10px"}}>
+            <img src={blog.image}  style={{aspectRatio:"16/9", borderRadius:"50px"}} />
+            <div style={{margin:"10px 30px 0"}}>
                 {blog.content.map((e, index) => (
                     <div key={index} style={{margin:"10px 0"}}>
                         {<h3>{e.headline}</h3>}
+                        {e.image && <img src={e.image} style={{borderRadius:"20px"}} alt={`Content Image ${index}`} />}
                         {e.text && (
                             <ReactMarkdown>{e.text}</ReactMarkdown>
                         )}
-                        {e.image && <img src={e.image} alt={`Content Image ${index}`} />}
                     </div>
                 ))}
             </div>

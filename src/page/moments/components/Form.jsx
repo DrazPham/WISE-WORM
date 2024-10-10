@@ -19,7 +19,7 @@ const ContactForm = () => {
             .catch(err => console.log(err));
     };
     return (
-        <Container style={{backgroundColor:"white",border:"1px solid black",padding:"20px",borderRadius:"10px" }}>
+        <Container style={{backgroundColor:"white",border:"1px solid black",padding:"20px",borderRadius:"10px",margin:"0 12px"}}>
             <Form  ref={formRef} onSubmit={handleSubmit}>
                 <h3>Hãy chia sẻ cho chúng mình câu chuyện của bạn!</h3>
                 <Form.Group className="mb-3" controlId="formName">
@@ -31,7 +31,7 @@ const ContactForm = () => {
                     <Form.Control style = {{fontWeight:"bold"}} as="textarea" rows={3} name="Message" required />
                 </Form.Group>
                 <Button style={{ float: "right" }} variant="success" type="submit">
-                    Submit
+                    Gửi
                 </Button>
             </Form>
         </Container>
