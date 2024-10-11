@@ -15,7 +15,7 @@ function WhyChooseUs() {
 					</div>
 					<div className="col-lg-7">
 						<div className="aximo-default-content arimo-font m-left-gap">
-							<span className="aximo-subtitle">WELCOME TO WISEWORM</span>
+							<span className="aximo-subtitle">WELCOME TO WISE WORM</span>
 							<h3>Dự án dạy Tiếng Anh cho trẻ em khó khăn</h3>
 							{/* <p>
 							Dự án dạy Tiếng Anh trực tuyến phi lợi nhuận, mang cơ hội tiếp cận Tiếng Anh đến trẻ em ở những vùng sâu, vùng xa, vùng gặp nhiều khó khăn
