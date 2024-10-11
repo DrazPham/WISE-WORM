@@ -98,7 +98,7 @@ function AboutUs() {
 			<BreadCrumb title="Giới thiệu" />
 			{/* <About /> */}
 			<Story />
-			<AutoSlider />
+			{/* <AutoSlider /> */}
 			<Teams teams={teamsData} />
 		</>
 	);

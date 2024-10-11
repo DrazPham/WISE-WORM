@@ -19,6 +19,19 @@ const timestampToDate = (timestamp) => {
 	return null;
 };
 
+function timestampToDateString(seconds) {
+	const date = new Date(seconds * 1000); // Convert seconds to milliseconds
+	return date.toLocaleDateString('en-US', {
+		year: 'numeric',
+		month: 'long',
+		day: 'numeric',
+		hour: '2-digit',
+		minute: '2-digit',
+		second: '2-digit'
+	});
+}
+
+
 function BlogGridPage() {
 
 	const [gridBlogData, setGridBlogData] = useState([]);
@@ -26,22 +39,24 @@ function BlogGridPage() {
 	useEffect(() => {
 		const fetchBlogData = async () => {
 			try {
-				const querySnapshot = await getDocs(collection(db, 'blog'));
+				// Create a query with orderBy on 'date'
+				const q = query(collection(db, 'blog'), orderBy('meta.date', 'desc')); // or 'desc' for newest to oldest				
+				const querySnapshot = await getDocs(q);				
 				const blogs = querySnapshot.docs.map(doc => {
 					const data = doc.data();
 					return {
 						id: doc.id,
 						...data,
 						meta: {
-							...data.meta,
-							date: timestampToDate(data.meta.date)
+							category: data.category,
+							date: timestampToDateString(data.meta.date.seconds).slice(0,-15)// Assuming Firestore timestamp
 						}
 					};
 				});
-				const sortedBlogs = blogs.sort((a, b) => b.id.localeCompare(a.id));
-
-				setGridBlogData(sortedBlogs);
-			} catch (error) {
+	
+				setGridBlogData(blogs);
+			} 
+			catch (error) {
 				console.error('Error fetching blog posts:', error);
 			}
 		};

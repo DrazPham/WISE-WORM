@@ -98,7 +98,11 @@ function PortfolioCard() {
                             marginRight: '-50%',
                             transform: 'translate(-50%, -50%)',
                             width: "70vw",
-                            height: "70vh"
+                            height: "70vh",
+                            // borderRadius:"20px",
+                        },
+                        overlay:{
+                            backgroundColor:"rgba(0,0,0,0.4)"
                         }
                     }}
                 >
@@ -109,7 +113,7 @@ function PortfolioCard() {
                             </div>
                         ))}
                         <h2 style={{ borderTop: "1px solid black" }}>{selectedStory.author}</h2>
-                        <h4>{timestampToDateString(selectedStory.postDate.seconds)}</h4>
+                        <h4>{timestampToDateString(selectedStory.postDate.seconds).slice(0,-15)}</h4>
                     </div>
                 </Modal>
             )}

@@ -3,7 +3,7 @@ import TeamCard from "./TeamCard";
 
 function Teams({ teams }) {
 	return (
-		<div className="section aximo-section-padding3">
+		<div className="section">
 			<div className="container">
 				<div className="aximo-section-title center">
 					<h2>
