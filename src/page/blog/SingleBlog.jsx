@@ -63,7 +63,7 @@ function SingleBlogPage() {
     return (
         <div style={{marginTop:"90px",padding:"0 10%"}} className="container">
             <h2 style={{margin:"0 30px"}}>{blog.title}</h2>
-            <img src={blog.image}  style={{aspectRatio:"16/9", borderRadius:"50px"}} />
+            <img src={blog.image}  style={{aspectRatio:"16/9", borderRadius:"50px",width:"100%"}} />
             <div style={{margin:"10px 30px 0"}}>
                 {blog.content.map((e, index) => (
                     <div key={index} style={{margin:"10px 0"}}>
