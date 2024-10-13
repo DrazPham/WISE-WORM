@@ -1,9 +1,10 @@
-import BreadCrumb from "components/common/Breadcrumb";
+import BreadCrumbStory from "./components/BreadCrumbStory";
 import PortfolioList from "./components/PortfolioList";
+
 function PortfolioTwoColumn() {
 	return (
 		<>
-			<BreadCrumb title="Câu chuyện từ dự án" />
+			<BreadCrumbStory title="Câu chuyện từ dự án" />
 			{/* <GridBlog /> */}
 			<PortfolioList />
 		</>

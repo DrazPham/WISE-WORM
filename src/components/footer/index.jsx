@@ -49,7 +49,7 @@ function Footer() {
 						<div className="col-xl-4 col-md-4">
 							<div className="aximo-footer-menu extar-margin light-one">
 								<div className="aximo-footer-title light-one">
-									<p>Trang</p>
+									<h3 style={{color:"#fff7ea"}}>Trang</h3>
 								</div>
 								<ul>
 									<li>
@@ -94,7 +94,7 @@ function Footer() {
 						<div className="col-xl-4 col-md-4">
 							<div className="aximo-footer-menu light-one m-0">
 								<div className="aximo-footer-title light-one">
-									<p>Liên hệ</p>
+									<h3 style={{color:"#fff7ea"}}>Liên hệ</h3>
 								</div>
 								<div className="aximo-contact-info2">
 									<ul>

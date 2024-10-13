@@ -19,9 +19,22 @@ function timestampToDateString(seconds) {
 	});
 }
 
-Modal.setAppElement('#root'); // to avoid screen reader accessibility issues
+Modal.setAppElement('#root'); 
 function newLineFix(text) {
-	return text.replace(/\\n/g, '  \n');  // Markdown line break
+	return text.replace(/\\n/g, '  \n');  
+}
+
+function timestampToVietnameseDate(timestamp) {
+    if (typeof timestamp === 'number' && timestamp < 1e12) {
+        timestamp *= 1000;
+    }
+
+    const date = new Date(timestamp);
+    const options = { 
+        year: 'numeric', month: 'long', day: 'numeric'
+    };
+
+    return date.toLocaleDateString('vi-VN', options);
 }
 
 function PortfolioCard() {
@@ -63,12 +76,9 @@ function PortfolioCard() {
                 <div className="col-lg-4" key={i}>
                     <div 
                         onClick={() => openModal(story)} 
-                        style={{ cursor: 'pointer', border: "1px solid black", padding: "20px", margin: "10px 0", borderRadius: "10px" }} 
+                        style={{ cursor: 'pointer', border: "1px solid black", padding: "10px 20px", margin: "10px 0", borderRadius: "10px" }} 
                         className="aximo-project-data"
                     >
-                        <h3 style={{ height: "120px", color: "black", borderBottom: "1px solid black" }}>
-                            {story.title}
-                        </h3>
                         <p style={{
                             color: "black",
                             textOverflow: "ellipsis",
@@ -80,6 +90,12 @@ function PortfolioCard() {
                         }}>
                             {story.description}
                         </p>
+                        <h3 style={{color: "black", borderTop: "1px solid black",marginBottom:"0px"}}>
+                            {story.author}
+                        </h3>
+                        <h4 style={{ fontWeight:"500",fontSize:"18px"}}>
+                            Giảng viên
+                        </h4>
                     </div>
                 </div>
             ))}
@@ -113,7 +129,7 @@ function PortfolioCard() {
                             </div>
                         ))}
                         <h2 style={{ borderTop: "1px solid black" }}>{selectedStory.author}</h2>
-                        <h4>{timestampToDateString(selectedStory.postDate.seconds).slice(0,-15)}</h4>
+                        <h4>{timestampToVietnameseDate(selectedStory.postDate.seconds)}</h4>
                     </div>
                 </Modal>
             )}

@@ -14,6 +14,8 @@
      1.4 themes css
 
 **/
+
+@import url("https://use.typekit.net/jxq1bok.css");
 :root {
 	--heading-color: #000;
 	--heading-color2: #1b1b1b;
@@ -100,7 +102,7 @@ html {
 body {
 	height: 100% !important;
 	color: var(--body-color);
-	font-family: "Podkova", serif;
+	font-family: "Proxima Nova", serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	vertical-align: baseline;
@@ -118,15 +120,11 @@ body.styleguide {
 }
 
 h1,h2{
-	font-family: "Podkova", serif;
+	font-family: "Greycliff CF", serif;
 }
 h3,h4{
-	font-family: "Aleo", serif;
+	font-family: "Greycliff CF", serif;
 }
-p{
-	font-family: "Comfortaa", serif;
-}
-
 hr {
 	display: block;
 	height: 1px;
@@ -8539,7 +8537,7 @@ a.aximo-connect-login img {
 	}
 }
 .aximo-default-content p {
-	font-size: 21px;
+	font-size: 18px;
 }
 @media (max-width: 767px) {
 	.aximo-default-content p {

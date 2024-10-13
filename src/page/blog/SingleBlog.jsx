@@ -10,18 +10,18 @@ import ReactMarkdown from 'react-markdown';
 
 const BlogContext = createContext({});
 
-function timestampToDate(timestamp) {  
-    if (timestamp && timestamp.seconds !== undefined) {  
-        const date = new Date(timestamp.seconds * 1000);  
-        return date.toLocaleDateString('en-US', {  
-            year: 'numeric',  
-            month: 'long',  
-            day: 'numeric',  
-        });  
-    }  
-    return null;  
-};  
+function timestampToVietnameseDate(timestamp) {
+    if (typeof timestamp === 'number' && timestamp < 1e12) {
+        timestamp *= 1000;
+    }
 
+    const date = new Date(timestamp);
+    const options = { 
+        year: 'numeric', month: 'long', day: 'numeric'
+    };
+
+    return date.toLocaleDateString('vi-VN', options);
+}
 function newLineFix(text) {
     return text.replace(/\\n/g, '  \n');  // Markdown line break
 }
@@ -38,7 +38,7 @@ function SingleBlogPage() {
             if (docSnap.exists()) {
                 const blogData = docSnap.data();
                 if (blogData.meta.date) {
-                    blogData.meta.date = timestampToDate(blogData.meta.date);
+                    blogData.meta.date = timestampToVietnameseDate(blogData.meta.date);
                 }
                 blogData.content = blogData.content.map((e) => {
                     if (e.text) {

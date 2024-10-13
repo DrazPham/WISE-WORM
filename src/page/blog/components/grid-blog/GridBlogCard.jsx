@@ -15,7 +15,7 @@ function GridBlogCard({ blog: { id, imagePreview, title, meta } }) {
 					<div className="post-date"  style = {{position:"absolute",bottom:"30px"}}>{meta.date}</div>
 					</div>
 					<Link className="post-read-more" to={`/blog/${id}`} style = {{position:"absolute",bottom:"10px"}}>
-						Read more <img src={ArrayRightImg} alt="Arrow" />
+						Tìm hiểu thêm<img src={ArrayRightImg} alt="Arrow" />
 					</Link>
 			</div>
 		</div>
