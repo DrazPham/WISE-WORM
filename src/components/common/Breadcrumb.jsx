@@ -5,12 +5,12 @@ function BreadCrumb({ title }) {
 			<div className="container">
 				<h1 className="post__title">{title}</h1>
 				<nav className="breadcrumbs">
-					<ul>
+					{/* <ul>
 						<li>
 							<Link to="/">Home</Link>
 						</li>
 						<li aria-current="page"> {title}</li>
-					</ul>
+					</ul> */}
 				</nav>
 			</div>
 		</div>

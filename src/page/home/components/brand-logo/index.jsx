@@ -1,4 +1,4 @@
-import Brand1Img from "assets/images/v4/b_1.png";
+import VietnamNet from "assets/images/brand/Vietnamnet-Logo.png";
 import Brand2Img from "assets/images/v4/b_2.png";
 import Brand3Img from "assets/images/v4/b_3.png";
 import Brand4Img from "assets/images/v4/b_4.png";
@@ -11,15 +11,8 @@ import { Autoplay } from "swiper/modules";
 const sliderData = [
 	{
 		id: crypto.randomUUID(),
-		img: Brand1Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		img: Brand2Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		img: Brand3Img,
+		img: VietnamNet,
+		link:"https://vietnamnet.vn/mo-ra-chan-troi-tri-thuc-moi-cho-tre-em-o-nhung-vung-que-xa-xoi-kho-khan-2322582.html",
 	},
 ];
 
@@ -52,7 +45,7 @@ function BrandLogo() {
 	return (
 		<div className="aximo-brandlogo-section2 extra-side-margin">
 			<div className="aximo-brandlogo-title">
-				<p>Xuất hiện trên</p>
+				<p>Chúng mình đã từng xuất hiện trên</p>
 			</div>
 			<div className="swiper aximo-auto-slider">
 				{
@@ -60,7 +53,9 @@ function BrandLogo() {
 						{sliderData.map((item) => (
 							<SwiperSlide key={item.id}>
 								<div className="aximo-brandlogo-item">
-									<img src={item.img} alt="brand logo" />
+									<a href= {item.link}>
+										<img src={item.img} alt="brand logo" />
+									</a>
 								</div>
 							</SwiperSlide>
 						))}

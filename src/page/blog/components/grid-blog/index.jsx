@@ -4,9 +4,8 @@ import { useContext } from "react";
 
 function GridBlog() {
 	const BlogGridData = useContext(BlogGridContext);
-	console.log(BlogGridData)
 	return (
-		<div className="section aximo-section-padding2">
+		<div className="section"  style = {{marginTop:"20px"}}>
 			<div className="container">
 				<div className="col-lg-12">
 					<div className="row">

@@ -3,9 +3,10 @@ import Shape4Img from "assets/images/v4/shape4.png";
 import TestimonialsCard from "./TestimonialsCard";
 function Testimonials() {
 	return (
-		<div className="section aximo-section-padding5 position-relative">
+		<div className="section position-relative">
 			<div className="container">
-				<div className="aximo-section-title arimo-font">
+				<h2>Một vài con số ấn tượng:</h2>
+				{/* <div className="aximo-section-title arimo-font">
 					<div className="row">
 						<div className="col-lg-7">
 							<span className="aximo-subtitle">Client success stories</span>
@@ -19,7 +20,7 @@ function Testimonials() {
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> */}
 				<TestimonialsCard />
 			</div>
 			<div className="aximo-v4-shape2">

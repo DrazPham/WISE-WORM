@@ -6,7 +6,7 @@ function ContactUs() {
 		<>
 			<BreadCrumb title="Liên hệ" />
 			<ContactInfo />
-			<TwoColumnFaq />
+			{/* <TwoColumnFaq /> */}
 		</>
 	);
 }
