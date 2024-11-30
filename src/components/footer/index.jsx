@@ -57,6 +57,9 @@ function Footer() {
 										<Link to="/about-us">Giới thiệu</Link>
 									</li>
 									<li>
+										<Link to="/single-portfolio">Dạy học</Link>
+									</li>
+									<li>
 										<Link to="/moments">Câu chuyện từ dự án</Link>
 									</li>
 									<li>
