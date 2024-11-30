@@ -11,7 +11,7 @@ function ContactInfo() {
 						THÔNG TIN LIÊN HỆ
 					</h2>
 				</div>
-				<div className="row">
+				<div className="row" style={{"--bs-gutter-y": "1.5rem"}}>
 					<div className="col-xl-4 col-md-6">
 						<a href="">
 							<div className="aximo-contact-info-box">
