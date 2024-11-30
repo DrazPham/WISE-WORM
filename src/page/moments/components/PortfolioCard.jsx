@@ -66,7 +66,7 @@ function PortfolioCard() {
                         style={{ cursor: 'pointer', border: "1px solid black", padding: "20px", margin: "10px 0", borderRadius: "10px" }} 
                         className="aximo-project-data"
                     >
-                        <h3 style={{ height: "120px", color: "black", borderBottom: "1px solid black" }}>
+                        <h3 style={{color: "black", borderBottom: "1px solid black" }}>
                             {story.title}
                         </h3>
                         <p style={{
@@ -112,7 +112,7 @@ function PortfolioCard() {
                                 <ReactMarkdown style={{ fontSize: "120%" }}>{e}</ReactMarkdown>
                             </div>
                         ))}
-                        <h2 style={{ borderTop: "1px solid black" }}>{selectedStory.author}</h2>
+                        <h2 style={{ borderTop: "1px solid black", padding:"10px 0"}}>{selectedStory.author}</h2>
                         <h4>{timestampToDateString(selectedStory.postDate.seconds).slice(0,-15)}</h4>
                     </div>
                 </Modal>

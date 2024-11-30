@@ -4,11 +4,11 @@ function TestimonialsCard() {
 		<>
 			<div className="row" style={{marginTop:"20px"}}>
 				<div className="col-md-3">
-					<div className="aximo-counter-wrap4">
+					<div className="aximo-counter-wrap4" style={{height:"100%"}}>
 						<div className="aximo-counter-data4">
 							<h2>
 								<span className="aximo-counter">
-									<CountUp end={10} duration={3} redraw={true} enableScrollSpy />
+									<CountUp end={10} duration={3} enableScrollSpy />
 								</span>
 								+
 							</h2>
@@ -17,11 +17,11 @@ function TestimonialsCard() {
 					</div>
 				</div>
 				<div className="col-md-3 order-md-2">
-					<div className="aximo-counter-wrap4">
+					<div className="aximo-counter-wrap4" style={{height:"100%"}}>
 						<div className="aximo-counter-data4">
 							<h2>
 								<span className="aximo-counter">
-									<CountUp end={100} duration={3} redraw={true} enableScrollSpy />
+									<CountUp end={100} duration={3} enableScrollSpy />
 								</span>
 								+
 							</h2>
@@ -30,11 +30,11 @@ function TestimonialsCard() {
 					</div>
 				</div>
 				<div className="col-md-3 order-md-2">
-					<div className="aximo-counter-wrap4">
+					<div className="aximo-counter-wrap4" style={{height:"100%"}}>
 						<div className="aximo-counter-data4">
 							<h2>
 								<span className="aximo-counter">
-									<CountUp end={500} duration={3} redraw={true} enableScrollSpy />
+									<CountUp end={500} duration={3} enableScrollSpy />
 								</span>
 								+
 							</h2>
@@ -43,11 +43,11 @@ function TestimonialsCard() {
 					</div>
 				</div>
 				<div className="col-md-3 order-md-2">
-					<div className="aximo-counter-wrap4">
+					<div className="aximo-counter-wrap4" style={{height:"100%"}}>
 						<div className="aximo-counter-data4">
 							<h2>
 								<span className="aximo-counter">
-									<CountUp end={24} duration={3} redraw={true} enableScrollSpy />
+									<CountUp end={24} duration={3} enableScrollSpy />
 								</span>
 								+
 							</h2>

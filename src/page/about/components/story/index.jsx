@@ -3,16 +3,11 @@ import StoryContent from "./StoryContent";
 import StoryPhotos from "./StoryPhotos";
 function Story() {
 	return (
-		<div className="section " style={{ marginTop: "100px" }}>
+		<div className="section" style={{margin: "30px 0"}}>
 			<div className="container">
 				<div className="aximo-section-title center title-description">
 					<h2>
-						<span className="aximo-title-animation">
-							Giới thiệu chung
-							<span className="aximo-title-icon">
-								<img src={Star2Img} alt="star" />
-							</span>
-						</span>
+						GIỚI THIỆU CHUNG
 					</h2>
 					<p style={{textAlign:"left"}}>
 						Wise Worm là dự án phi lợi nhuận thành lập vào mùa hè năm 2023 với sứ mệnh dạy học miễn phí Tiếng Anh cho trẻ em ở vùng cao và các vùng quê xa xôi, nơi mà điều kiện tiếp cận giáo dục ngoại ngữ còn nhiều khó khăn. Các lớp học được tổ chức với mong muốn giúp các em nhỏ cải thiện khả năng Tiếng Anh, một ngôn ngữ quan trọng trong thời đại hội nhập.

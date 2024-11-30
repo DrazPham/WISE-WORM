@@ -4,19 +4,14 @@ import MapImg from "assets/images/icon/map.svg";
 import Star2Img from "assets/images/v1/star2.png";
 function ContactInfo() {
 	return (
-		<div className="section aximo-section-padding aximo-contact-info-section">
+		<div className="section" style={{margin:"30px 0 100px"}}>
 			<div className="container">
 				<div className="aximo-contact-info-title">
 					<h2>
-						<span className="aximo-title-animation">
-							Thông tin liên hệ
-							<span className="aximo-title-icon">
-								<img src={Star2Img} alt="Star" />
-							</span>
-						</span>
+						THÔNG TIN LIÊN HỆ
 					</h2>
 				</div>
-				<div className="row">
+				<div className="row" style={{"--bs-gutter-y": "1.5rem"}}>
 					<div className="col-xl-4 col-md-6">
 						<a href="">
 							<div className="aximo-contact-info-box">
