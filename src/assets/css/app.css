@@ -4797,7 +4797,7 @@ span.aximo-hero-shape-title2 {
 	position: relative;
 	border-radius: 15px;
 	overflow: hidden;
-	border: 5px solid var(--dark-bg);
+	border: 3px solid var(--dark-bg);
 }
 .aximo-team-thumb img {
 	transition: all 0.5s;
