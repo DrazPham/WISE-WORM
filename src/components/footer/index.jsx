@@ -30,7 +30,7 @@ function Footer() {
 										</li> */}
 										<li>
 											<a href="https://www.facebook.com/wiseworm" target="_blank">
-												<i className="icon-facebook"></i>
+												<i className="bi bi-messenger"></i>
 											</a>
 										</li>
 										{/* <li>
