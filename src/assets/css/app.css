@@ -14,6 +14,9 @@
      1.4 themes css
 
 **/
+
+@import url("https://use.typekit.net/jxq1bok.css");
+
 :root {
 	--heading-color: #000;
 	--heading-color2: #1b1b1b;
@@ -23,37 +26,37 @@
 	--heading-color6: #0b1040;
 	--body-color: #0c0c0c;
 	--accent-color: #bff747;
-	--white-smoke: #fdfde1;
+	--white-smoke: #ffffff;
 	--white-color: #ffffff;
 	--orange-color: #ff4612;
 	--orange-color2: #ff8064;
 	--corn-color: #f4b905;
 	--green-color: #073d30;
 	--green-color2: #02854c;
-	--light-color1: #f6f5ef;
-	--light-color2: #fefcfb;
-	--light-color3: #fff7ea;
-	--light-color4: #fffcf2;
-	--light-color5: #f3ede8;
-	--light-color6: #f8fcdd;
+	--light-color1: #ffffff;
+	--light-color2: #ffffff;
+	--light-color3: #ffffff;
+	--light-color4: #ffffff;
+	--light-color5: #ffffff;
+	--light-color6: #ffffff;
 	--dark-bg: #000000;
 	--dark-bg2: #2c2c2c;
 	--dark-bg3: #0b1040;
 	--white-bg: #ffffff;
 	--orange-bg: #ff4612;
-	--orange-bg2: #ff8064;
+	--orange-bg2: #3e2f77;
 	--accent-bg: #bff747;
 	--yellow-bg: #ffe757;
 	--corn-bg: #f4b905;
 	--blue-bg: #0000ff;
-	--light-bg1: #fffff5;
-	--light-bg2: #f6f5ef;
-	--light-bg3: #fefcfb;
-	--light-bg4: #fff7ea;
-	--light-bg5: #fffdf8;
-	--light-bg6: #fffcf2;
-	--light-bg7: #f3ede8;
-	--light-bg8: #f8fcdd;
+	--light-bg1: #ffffff;
+	--light-bg2: #ffffff;
+	--light-bg3: #ffffff;
+	--light-bg4: #ffffff;
+	--light-bg5: #ffffff;
+	--light-bg6: #ffffff;
+	--light-bg7: #ffffff;
+	--light-bg8: #ffffff;
 	--green-bg: #073d30;
 	--green-bg2: #02854c;
 	--cornflower-bg: #d68be7;
@@ -100,7 +103,7 @@ html {
 body {
 	height: 100% !important;
 	color: var(--body-color);
-	font-family: "Podkova", serif;
+	font-family: "Proxima Nova", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	vertical-align: baseline;
@@ -117,14 +120,11 @@ body.styleguide {
 	background-color: #dcdfe8;
 }
 
-h1,h2{
-	font-family: "Podkova", serif;
-}
-h3,h4{
-	font-family: "Aleo", serif;
+h1,h2,h3,h4{
+	font-family: greycliff-cf, sans-serif;
 }
 p{
-	font-family: "Comfortaa", serif;
+	font-family: proxima-nova, sans-serif;
 }
 
 hr {
@@ -2120,7 +2120,7 @@ header.aximo-header-section.aximo-header7.sticky-menu {
 }
 
 .aximo-footer-bottom {
-	padding: 35px 0;
+	padding: 20px 0;
 	border-top: 1px solid #333;
 }
 @media (max-width: 991px) {
@@ -2332,7 +2332,7 @@ header.aximo-header-section.aximo-header7.sticky-menu {
 }
 
 .aximo-footer-section4 {
-	padding-top: 130px;
+	padding-top: 20px;
 	background-color: #191931;
 }
 @media (max-width: 991px) {
@@ -2346,7 +2346,7 @@ header.aximo-header-section.aximo-header7.sticky-menu {
 	}
 }
 .aximo-footer-top4 {
-	padding: 80px 0;
+	padding: 60px 0;
 }
 .aximo-footer-textarea.light-one p {
 	color: var(--light-color3);
@@ -4074,7 +4074,7 @@ button#aximo-hero-subscription-btn:hover .aximo-label-up {
 }
 
 .aximo-hero-section4 {
-	margin: 0 50px;
+	margin: 20px 50px;
 	border-radius: 20px;
 	margin-top: 80px;
 	padding: 130px 0 120px;
@@ -4656,19 +4656,19 @@ span.aximo-hero-shape-title2 {
 	text-align: center;
 }
 .aximo-counter-data4 h2 {
-	font-size: 120px;
+	font-size: 90px;
 	margin-bottom: 20px;
 	text-align: center;
 	color: var(--light-color3);
 }
 @media (max-width: 1399px) {
 	.aximo-counter-data4 h2 {
-		font-size: 100px;
+		font-size: 80px;
 	}
 }
 @media (max-width: 1199px) {
 	.aximo-counter-data4 h2 {
-		font-size: 80px;
+		font-size: 70px;
 	}
 }
 @media (max-width: 991px) {
@@ -4679,17 +4679,17 @@ span.aximo-hero-shape-title2 {
 }
 @media (max-width: 767px) {
 	.aximo-counter-data4 h2 {
-		font-size: 48px;
+		font-size: 50px;
 	}
 }
 .aximo-counter-data4 p {
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: 600;
 	color: var(--light-color3);
 }
 @media (max-width: 991px) {
 	.aximo-counter-data4 p {
-		font-size: 18px;
+		font-size: 20px;
 	}
 }
 
@@ -6549,7 +6549,7 @@ img.aximo-video-circle {
 }
 .aximo-brandlogo-title {
 	text-align: center;
-	margin-bottom: 60px;
+	margin-bottom: 10px;
 }
 @media (max-width: 767px) {
 	.aximo-brandlogo-title {
@@ -6557,8 +6557,9 @@ img.aximo-video-circle {
 	}
 }
 .aximo-brandlogo-title p {
-	font-size: 21px;
-	color: var(--light-color1);
+	font-size: 20px;
+	font-weight: 600;
+	color: var(--dark-bg2);
 }
 .aximo-brandlogo-item {
 	margin: 0 40px;
@@ -6642,27 +6643,27 @@ img.aximo-video-circle {
 }
 
 .aximo-brandlogo-section2 {
-	padding: 100px 0;
+	padding: 50px 0;
 	border-radius: 20px;
-	background-color: #191931;
+	background-color: #e6faff;
 }
 @media (max-width: 991px) {
 	.aximo-brandlogo-section2 {
-		padding: 80px 0;
+		padding: 40px 0;
 	}
 }
 @media (max-width: 767px) {
 	.aximo-brandlogo-section2 {
-		padding: 60px 0;
+		padding: 30px 0;
 	}
 }
 .aximo-brandlogo-title2 {
 	text-align: center;
-	margin-bottom: 60px;
+	margin-bottom: 10px;
 }
 @media (max-width: 767px) {
 	.aximo-brandlogo-title2 {
-		margin-bottom: 40px;
+		margin-bottom: 10px;
 	}
 }
 .aximo-brandlogo-title2 p {
@@ -6671,7 +6672,7 @@ img.aximo-video-circle {
 	color: var(--orange-color2);
 }
 .aximo-brandlogo-item {
-	margin: 0 40px;
+	margin: 0 10px;
 }
 
 .aximo-brandlogo-section3 {
@@ -8346,7 +8347,7 @@ a.aximo-connect-login img {
 	}
 }
 .aximo-section-title p {
-	font-size: 21px;
+	font-size: 20px;
 }
 @media (max-width: 991px) {
 	.aximo-section-title p {
@@ -8539,7 +8540,7 @@ a.aximo-connect-login img {
 	}
 }
 .aximo-default-content p {
-	font-size: 21px;
+	font-size: 20px;
 }
 @media (max-width: 767px) {
 	.aximo-default-content p {
@@ -9508,7 +9509,7 @@ a.aximo-connect-login img {
 	transition: 0.4s;
 	padding: 24px;
 	border-radius: 20px;
-	background-color: #fffdf8;
+	background-color: #fdfdfd;
 	border: 1px solid var(--heading-color);
 }
 
@@ -10311,3 +10312,12 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+.bottom-line {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2.5px;
+	background-color: #d1cfcf;
+  }

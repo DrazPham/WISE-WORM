@@ -1,12 +1,9 @@
 import CountUp from "react-countup";
-import Thumb1Img from "assets/images/v1/t_thumb1.png";
-import Thumb2Img from "assets/images/v1/t_thumb2.png";
-import QuoteImg from "assets/images/v4/quote.png";
 function TestimonialsCard() {
 	return (
 		<>
 			<div className="row" style={{marginTop:"20px"}}>
-				<div className="col-lg-6">
+				<div className="col-md-3">
 					<div className="aximo-counter-wrap4">
 						<div className="aximo-counter-data4">
 							<h2>
@@ -15,11 +12,11 @@ function TestimonialsCard() {
 								</span>
 								+
 							</h2>
-							<p>Tỉnh,thành phố</p>
+							<p>Tỉnh, thành phố</p>
 						</div>
 					</div>
 				</div>
-				<div className="col-lg-6 order-lg-2">
+				<div className="col-md-3 order-md-2">
 					<div className="aximo-counter-wrap4">
 						<div className="aximo-counter-data4">
 							<h2>
@@ -32,7 +29,7 @@ function TestimonialsCard() {
 						</div>
 					</div>
 				</div>
-				<div className="col-lg-6 order-lg-2">
+				<div className="col-md-3 order-md-2">
 					<div className="aximo-counter-wrap4">
 						<div className="aximo-counter-data4">
 							<h2>
@@ -45,7 +42,7 @@ function TestimonialsCard() {
 						</div>
 					</div>
 				</div>
-				<div className="col-lg-6 order-lg-2">
+				<div className="col-md-3 order-md-2">
 					<div className="aximo-counter-wrap4">
 						<div className="aximo-counter-data4">
 							<h2>

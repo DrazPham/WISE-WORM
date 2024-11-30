@@ -13,7 +13,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 // fonts
 import "./assets/css/fontawesome.css";
 import "./assets/css/icomoon.css";
-import "./font.js";
+import "./font.js"
 
 //  Swiper styles
 import "swiper/css";

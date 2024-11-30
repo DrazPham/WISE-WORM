@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 function TeamCard({ team: { name, designation, img } }) {
 	return (
-		<div className="col-xl-3 col-md-6">
+		<div className="col-lg-3 col-md-6">
 			<div className="aximo-team-wrap">
 				<div className="aximo-team-thumb" style={{aspectRatio:"1/1"}}>
 					<img src={img} style ={{width:"100%",height:"100%",objectFit:"cover"}}alt={name} />

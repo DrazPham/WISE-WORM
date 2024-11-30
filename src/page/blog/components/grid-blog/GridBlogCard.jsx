@@ -5,8 +5,16 @@ function GridBlogCard({ blog: { id, imagePreview, title, meta } }) {
 	return (
 		<div className="col-xl-4" style={{position:"relative",margin:"10px 0"}}>
 			<div className="single-post-item" style={{height:"100%"}}>
-				<div className="post-thumbnail">
-					<img src={imagePreview} style={{aspectRatio:"16/9"}}alt={title} />
+			<div className="post-thumbnail" style={{ aspectRatio: "16/9", overflow: "hidden" }}>
+				<img
+					src={imagePreview}
+					alt={title}
+					style={{
+					width: "100%",
+					height: "100%",
+					objectFit: "cover", 
+					}}
+				/>
 				</div>
 				<div className="post-content">
 					<Link to={`/blog/${id}`}>

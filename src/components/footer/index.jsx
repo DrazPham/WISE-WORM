@@ -15,7 +15,8 @@ function Footer() {
 										background: "linear-gradient(to right, #4f469c,#2c61d1)",
 										backgroundClip: "text",
 										color: "transparent",
-									}}>WISEWORM</h2>
+										marginBottom: "20px"
+									}}>WISE WORM</h2>
 								</a>
 								<p>
 								Dự án dạy Tiếng Anh trực tuyến phi lợi nhuận, mang cơ hội tiếp cận Tiếng Anh đến trẻ em ở những vùng sâu, vùng xa, vùng gặp nhiều khó khăn
