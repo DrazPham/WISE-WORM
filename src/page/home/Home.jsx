@@ -11,7 +11,7 @@ import WhyChooseUs from "./components/why-choose-us";
 
 function HomeFour() {
 	return (
-		<div className="aximo-all-section bg-light4" style={{margin: "20px 50px", display:"flex",gap:"30px",flexDirection:"column"}}>
+		<div className="aximo-all-section bg-light4" style={{margin: "20px 50px 100px", display:"flex",gap:"30px",flexDirection:"column"}}>
 			<Hero />
 			<WhyChooseUs />
 			<BrandLogo />

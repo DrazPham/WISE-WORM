@@ -3,7 +3,7 @@ import Single2Img from "assets/images/portfolio/p_single2.png";
 import Star2Img from "assets/images/v1/star2.png";
 function PortfolioDetails() {
 	return (
-		<div className="aximo-project-single-section">
+		<div style={{margin:"30px 0 0 "}}>
 			<div className="container" >
 				<div className="container" style={{borderBotton:"1px solid black", marginBottom:"20px"}}>
 					<div className="aximo-project-single-thumb" style={{ aspectRatio: "16/9" }}>

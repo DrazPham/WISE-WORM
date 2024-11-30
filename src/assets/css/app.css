@@ -44,7 +44,7 @@
 	--dark-bg3: #0b1040;
 	--white-bg: #ffffff;
 	--orange-bg: #ff4612;
-	--orange-bg2: #3e2f77;
+	--orange-bg2: #9B1920;
 	--accent-bg: #bff747;
 	--yellow-bg: #ffe757;
 	--corn-bg: #f4b905;
@@ -60,6 +60,7 @@
 	--green-bg: #073d30;
 	--green-bg2: #02854c;
 	--cornflower-bg: #d68be7;
+	--yellow-bg: #FED400;
 }
 
 /*1.0 base css*/
@@ -3281,7 +3282,7 @@ button#aximo-submit-btn2:hover .aximo-label-up {
 .aximo-breadcrumb {
 	text-align: center;
 	padding: 195px 0 130px;
-	background-color: var(--dark-bg);
+	background-color: var(--yellow-bg);
 }
 @media (max-width: 991px) {
 	.aximo-breadcrumb {
@@ -3301,7 +3302,7 @@ button#aximo-submit-btn2:hover .aximo-label-up {
 
 h1.post__title {
 	margin-bottom: 50px;
-	color: var(--white-smoke);
+	color: black
 }
 @media (max-width: 1400px) {
 	h1.post__title {
@@ -4687,9 +4688,9 @@ span.aximo-hero-shape-title2 {
 	font-weight: 600;
 	color: var(--light-color3);
 }
-@media (max-width: 991px) {
+@media (max-width: 1400px) {
 	.aximo-counter-data4 p {
-		font-size: 20px;
+		font-size: 16px;
 	}
 }
 
@@ -4811,9 +4812,10 @@ span.aximo-hero-shape-title2 {
 }
 .aximo-team-data h3 {
 	margin-bottom: 7px;
+	font-size: 22px;
 }
 .aximo-team-data p {
-	font-size: 21px;
+	font-size: 16px;
 }
 
 .team-social {
@@ -6284,7 +6286,7 @@ img.aximo-video-circle {
 	justify-content: center;
 	border-radius: 100%;
 	transition: all 0.4s;
-	border: 1px solid var(--white-smoke);
+	/* border: 1px solid var(--white-smoke); */
 	background-color: var(--dark-bg);
 }
 .aximo-social-icon ul li a i {
@@ -6297,7 +6299,7 @@ img.aximo-video-circle {
 .aximo-social-icon ul li a:hover {
 	background-color: var(--accent-bg);
 	box-shadow: 0 2px 0 0 var(--white-smoke);
-	border: 1px solid var(--dark-bg);
+	/* border: 1px solid var(--dark-bg); */
 }
 .aximo-social-icon.social-large ul li a {
 	width: 45px;
@@ -6374,7 +6376,7 @@ img.aximo-video-circle {
 	width: 35px;
 	height: 35px;
 	background-color: transparent;
-	border: 1px solid var(--light-color3);
+	/* border: 1px solid var(--light-color3); */
 }
 .aximo-social-icon3 ul li a:hover {
 	box-shadow: none;
@@ -8289,7 +8291,7 @@ a.aximo-connect-login img {
 }
 
 .aximo-section-title {
-	padding-bottom: 80px;
+	padding-bottom: 30px;
 }
 .aximo-section-title.center {
 	margin: 0 auto;
@@ -9952,11 +9954,12 @@ a.comment-reply {
 	margin-bottom: 50px;
 }
 .aximo-contact-info-box {
+	height: 100%;
 	display: flex;
 	padding: 30px 70px;
 	border-radius: 10px;
 	margin-bottom: 24px;
-	background-color: var(--dark-bg);
+	background-color: var(--orange-bg2);
 	box-shadow: 0px 4px 80px 0px rgba(0, 0, 0, 0.08);
 }
 @media (max-width: 1399px) {
@@ -10321,3 +10324,7 @@ button:hover {
 	height: 2.5px;
 	background-color: #d1cfcf;
   }
+
+svg{
+	margin: 5px;
+}

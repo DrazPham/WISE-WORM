@@ -5,7 +5,7 @@ import { useContext } from "react";
 function GridBlog() {
 	const BlogGridData = useContext(BlogGridContext);
 	return (
-		<div className="section"  style = {{marginTop:"20px"}}>
+		<div className="section"  style = {{margin:"30px 0 100px"}}>
 			<div className="container">
 				<div className="col-lg-12">
 					<div className="row">

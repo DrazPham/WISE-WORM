@@ -356,6 +356,7 @@
 	font-style: normal;
 	letter-spacing: normal;
 	position: relative;
+	white-space: nowrap;
 }
 .aximo-header1 .site-menu-main .nav-link-item {
 	color: var(--white-smoke);
