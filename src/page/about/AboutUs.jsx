@@ -109,14 +109,14 @@ const teamsDataBan = [
 
 function AboutUs() {
 	return (
-		<>
-			<BreadCrumb title="Giới thiệu" />
+		<div style={{margin:" 0 0 100px"}}>
+			<BreadCrumb title="GIỚI THIỆU" />
 			{/* <About /> */}
 			<Story />
 			{/* <AutoSlider /> */}
-			<Teams title={"Chủ tịch và Nhà sáng lập"} teams={teamsDataPres} />
-			<Teams title={"Trưởng ban"} teams={teamsDataBan} />
-		</>
+			<Teams title={"CHỦ TỊCH & NHÀ SÁNG LẬP"} teams={teamsDataPres} />
+			<Teams title={"TRƯỞNG BAN"} teams={teamsDataBan}/>
+		</div>
 	);
 }
 

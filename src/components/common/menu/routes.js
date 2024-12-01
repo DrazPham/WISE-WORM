@@ -4,6 +4,10 @@ export const routes = [
 		href: "about-us",
 	},
 	{
+		title: "Dạy học",
+		href: "single-portfolio",
+	},
+	{
 		title: "Câu chuyện từ dự án",
 		href: "moments",
 	},

@@ -31,9 +31,7 @@ function TeamCard({ team: { name, designation, img } }) {
 					</div>
 				</div>
 				<div className="aximo-team-data">
-					<Link to="/single-team">
-						<h3>{name}</h3>
-					</Link>
+					<h3>{name}</h3>
 					<p>{designation}</p>
 				</div>
 			</div>

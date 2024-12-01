@@ -3,16 +3,11 @@ import TeamCard from "./TeamCard";
 
 function Teams({ title, teams }) {
 	return (
-		<div className="section">
+		<div className="section" style={{margin:"50px 0 0"}}>
 			<div className="container">
 				<div className="aximo-section-title center">
 					<h2>
 						{title}
-						<span className="aximo-title-animation">
-							<span className="aximo-title-icon">
-								<img src={Star2Img} alt="Star2Img" />
-							</span>
-						</span>
 					</h2>
 				</div>
 				<div className="row extra-side-margin">

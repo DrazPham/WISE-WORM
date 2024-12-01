@@ -3,7 +3,7 @@ import Form from "./Form";
 
 function PortfolioList() {
 	return (
-		<div className="section aximo-project-page aximo-section-padding5">
+		<div className="section aximo-project-page" style={{margin:"30px 0 100px"}}>
 			<div className="container">
 				<div className="row">
 					<PortfolioCard></PortfolioCard>

@@ -4,7 +4,7 @@ import TwoColumnFaq from "./components/TwoColumnFaq";
 function ContactUs() {
 	return (
 		<>
-			<BreadCrumb title="Liên hệ" />
+			<BreadCrumb title="LIÊN HỆ" />
 			<ContactInfo />
 			{/* <TwoColumnFaq /> */}
 		</>

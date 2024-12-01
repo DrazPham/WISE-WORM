@@ -56,7 +56,7 @@ function HeaderMenu() {
 					</li>
 					<li className="nav-item">
 						<Link to="/about-us" className="nav-link-item">
-							About Us
+							Giới thiệu
 						</Link>
 					</li>
 					<li className="nav-item nav-item-has-children">
