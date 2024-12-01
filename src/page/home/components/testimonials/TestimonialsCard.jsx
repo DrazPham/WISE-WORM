@@ -2,7 +2,7 @@ import CountUp from "react-countup";
 function TestimonialsCard() {
 	return (
 		<>
-			<div className="row" style={{marginTop:"20px"}}>
+			<div className="row" style={{marginTop:"20px",gap:"20px"}}>
 				<div className="col-md-3">
 					<div className="aximo-counter-wrap4" style={{height:"100%"}}>
 						<div className="aximo-counter-data4">
