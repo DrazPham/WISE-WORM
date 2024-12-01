@@ -110,7 +110,7 @@ const teamsDataBan = [
 function AboutUs() {
 	return (
 		<div style={{margin:" 0 0 100px"}}>
-			<BreadCrumb title="Giới thiệu" />
+			<BreadCrumb title="GIỚI THIỆU" />
 			{/* <About /> */}
 			<Story />
 			{/* <AutoSlider /> */}

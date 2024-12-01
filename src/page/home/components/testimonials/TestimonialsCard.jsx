@@ -21,7 +21,7 @@ function TestimonialsCard() {
 						<div className="aximo-counter-data4">
 							<h2>
 								<span className="aximo-counter">
-									<CountUp end={100} duration={3} enableScrollSpy />
+									<CountUp end={150} duration={3} enableScrollSpy />
 								</span>
 								+
 							</h2>
@@ -34,7 +34,7 @@ function TestimonialsCard() {
 						<div className="aximo-counter-data4">
 							<h2>
 								<span className="aximo-counter">
-									<CountUp end={500} duration={3} enableScrollSpy />
+									<CountUp end={1000} duration={3} enableScrollSpy />
 								</span>
 								+
 							</h2>
@@ -47,7 +47,7 @@ function TestimonialsCard() {
 						<div className="aximo-counter-data4">
 							<h2>
 								<span className="aximo-counter">
-									<CountUp end={24} duration={3} enableScrollSpy />
+									<CountUp end={35} duration={3} enableScrollSpy />
 								</span>
 								+
 							</h2>

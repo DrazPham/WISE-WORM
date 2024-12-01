@@ -65,7 +65,7 @@ function BlogGridPage() {
 
 	return (
 		<BlogGridContext.Provider value={gridBlogData}>
-			<BreadCrumb title="Bài viết" />
+			<BreadCrumb title="BÀI VIẾT" />
 			<GridBlog />
 		</BlogGridContext.Provider>
 	);

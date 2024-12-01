@@ -5,7 +5,7 @@ import Testimonial from "src/components/common/testimonial/index";
 function SinglePortfolio() {
 	return (
 		<>
-			<BreadCrumb title="Dạy học" />
+			<BreadCrumb title="DẠY HỌC" />
 			<PortfolioDetails />
 			<Testimonial />
 		</>

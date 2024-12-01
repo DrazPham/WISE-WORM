@@ -62,7 +62,7 @@ function SingleBlogPage() {
 
     return (
         <div style={{marginTop:"90px"}} className="container">
-            <h2 style={{margin:"0 30px"}}>{blog.title}</h2>
+            <h2 style={{margin:"0 0 30px"}}>{blog.title}</h2>
             <img src={blog.image}  style={{height:"100%", borderRadius:"50px",width:"100%"}} />
             <div style={{margin:"10px 30px 0"}}>
                 {blog.content.map((e, index) => (
@@ -75,14 +75,14 @@ function SingleBlogPage() {
                     </div>
                 ))}
             </div>
-        <div style={{margin:"0 30px "}}>
+        {/* <div style={{margin:"0 30px "}}>
             <h2>Categories:</h2>
             <ul style={{display:"flex",gap:"20px",margin:"10px 0"}}>
             {blog.tags.map((e, index) => (
                 <li key={index} style={{padding:"10px 20px",backgroundColor:"#787c91",color:"white",borderRadius:"30px"}}> {e} </li>
             ))}
             </ul>
-        </div>
+        </div> */}
         </div>
     );
 }
