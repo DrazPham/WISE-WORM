@@ -10329,3 +10329,12 @@ button:hover {
 svg{
 	margin: 5px;
 }
+
+.rowCount{
+	margin-top:20px;
+}
+@media (max-width: 767px) {
+	.rowCount{
+		gap:20px;
+	}
+}
