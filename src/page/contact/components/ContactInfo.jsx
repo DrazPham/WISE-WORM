@@ -22,8 +22,8 @@ function ContactInfo() {
 								</div>
 								<div className="aximo-contact-info-data">
 									<span>Điện thoại</span>
-									<p>09123456789</p>
-									<p>09123456789</p>
+									<p>0779404094</p>
+									<p>0983073143</p>
 								</div>
 							</div>
 						</a>
